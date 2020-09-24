@@ -1,0 +1,385 @@
+VERSION 5.00
+Begin VB.PropertyPage ppMenuObjects 
+   Caption         =   "MenuObjects"
+   ClientHeight    =   3495
+   ClientLeft      =   0
+   ClientTop       =   0
+   ClientWidth     =   5925
+   PaletteMode     =   0  'Halftone
+   ScaleHeight     =   3495
+   ScaleWidth      =   5925
+   Begin VB.Frame Frame3 
+      Caption         =   "Fore Color"
+      BeginProperty Font 
+         Name            =   "Arial"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H8000000D&
+      Height          =   675
+      Left            =   120
+      TabIndex        =   12
+      Top             =   2160
+      Width           =   2715
+      Begin VB.PictureBox PictForeColor 
+         Height          =   255
+         Left            =   2040
+         ScaleHeight     =   195
+         ScaleWidth      =   315
+         TabIndex        =   15
+         Top             =   240
+         Width           =   375
+      End
+      Begin VB.CommandButton CmdColor 
+         Caption         =   "..."
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   255
+         Left            =   1560
+         TabIndex        =   14
+         Top             =   240
+         Width           =   375
+      End
+      Begin VB.Label Label1 
+         AutoSize        =   -1  'True
+         Caption         =   "Menu Fore Color"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   195
+         Left            =   120
+         TabIndex        =   13
+         Top             =   300
+         Width           =   1185
+      End
+   End
+   Begin VB.Frame Frame2 
+      Caption         =   "Appearance of Menu"
+      BeginProperty Font 
+         Name            =   "Arial"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H8000000D&
+      Height          =   1035
+      Left            =   120
+      TabIndex        =   3
+      Top             =   120
+      Width           =   4515
+      Begin VB.CommandButton CmdMaxItemDN 
+         Caption         =   "<"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   300
+         Left            =   1800
+         TabIndex        =   9
+         Top             =   600
+         Width           =   255
+      End
+      Begin VB.CommandButton CmdMaxItemUP 
+         Caption         =   ">"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   300
+         Left            =   2520
+         TabIndex        =   8
+         Top             =   600
+         Width           =   255
+      End
+      Begin VB.TextBox txtMenuItemsMax 
+         Alignment       =   2  'Center
+         BackColor       =   &H0080FFFF&
+         BeginProperty Font 
+            Name            =   "Arial"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   315
+         Left            =   2122
+         Locked          =   -1  'True
+         MaxLength       =   2
+         TabIndex        =   5
+         Top             =   600
+         Width           =   330
+      End
+      Begin VB.TextBox txtMenuCaption 
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   315
+         Left            =   1800
+         MaxLength       =   255
+         TabIndex        =   4
+         Top             =   240
+         Width           =   2610
+      End
+      Begin VB.Label lblMenuStartup 
+         AutoSize        =   -1  'True
+         Caption         =   "Ma&ximum Menuitems:"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   195
+         Left            =   120
+         TabIndex        =   7
+         Top             =   660
+         Width           =   1530
+      End
+      Begin VB.Label lblMenusMax 
+         AutoSize        =   -1  'True
+         Caption         =   "Ca&ption:"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   195
+         Left            =   120
+         TabIndex        =   6
+         Top             =   300
+         Width           =   615
+      End
+   End
+   Begin VB.Frame Frame1 
+      Caption         =   "What to edit"
+      BeginProperty Font 
+         Name            =   "Arial"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H8000000D&
+      Height          =   675
+      Left            =   120
+      TabIndex        =   0
+      Top             =   1320
+      Width           =   4515
+      Begin VB.CommandButton CmdMenuDN 
+         Caption         =   "<"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   300
+         Left            =   1800
+         TabIndex        =   11
+         Top             =   240
+         Width           =   255
+      End
+      Begin VB.CommandButton CmdMenuUP 
+         Caption         =   ">"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   300
+         Left            =   2520
+         TabIndex        =   10
+         Top             =   240
+         Width           =   255
+      End
+      Begin VB.TextBox txtMenuItemCur 
+         Alignment       =   2  'Center
+         BackColor       =   &H0080FFFF&
+         BeginProperty Font 
+            Name            =   "Arial"
+            Size            =   9
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   330
+         Left            =   2122
+         Locked          =   -1  'True
+         MaxLength       =   2
+         TabIndex        =   1
+         Top             =   240
+         Width           =   330
+      End
+      Begin VB.Label lblMenuCur 
+         AutoSize        =   -1  'True
+         Caption         =   "&Current Menuitem:"
+         BeginProperty Font 
+            Name            =   "Tahoma"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   195
+         Left            =   120
+         TabIndex        =   2
+         Top             =   300
+         Width           =   1350
+      End
+   End
+End
+Attribute VB_Name = "ppMenuObjects"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = True
+Option Explicit
+
+Private MaxMenuItem As Integer
+Private CurrentMenu As Integer
+Private bWait As Boolean
+Private MonDlg As ClsDialog
+
+
+Private Sub CmdColor_Click()
+    If MonDlg.ShowColor Then
+        PictForeColor.BackColor = MonDlg.RGBcolor
+        Changed = True
+    End If
+End Sub
+
+Private Sub CmdMaxItemDN_Click()
+    If MaxMenuItem <= 1 Then
+        Exit Sub
+    End If
+    MaxMenuItem = MaxMenuItem - 1
+    txtMenuItemsMax.Text = MaxMenuItem
+    Changed = True
+End Sub
+
+Private Sub CmdMaxItemUP_Click()
+    If MaxMenuItem = 12 Then
+        Exit Sub
+    End If
+    MaxMenuItem = MaxMenuItem + 1
+    txtMenuItemsMax.Text = MaxMenuItem
+    Changed = True
+End Sub
+
+Private Sub CmdMenuDN_Click()
+    If CurrentMenu <= 1 Then
+        Exit Sub
+    End If
+    CurrentMenu = CurrentMenu - 1
+    txtMenuItemCur.Text = CurrentMenu
+    Changed = True
+End Sub
+
+Private Sub CmdMenuUP_Click()
+    If CurrentMenu >= MaxMenuItem Then
+        Exit Sub
+    End If
+    CurrentMenu = CurrentMenu + 1
+    txtMenuItemCur.Text = CurrentMenu
+    Changed = True
+End Sub
+
+Private Sub PropertyPage_Initialize()
+    Set MonDlg = New ClsDialog
+End Sub
+
+Private Sub PropertyPage_Terminate()
+    Set MonDlg = Nothing
+End Sub
+
+Private Sub txtMenuCaption_Change()
+    If bWait Then
+        Changed = True
+    End If
+End Sub
+
+Private Sub txtMenuCaption_GotFocus()
+  With txtMenuCaption
+    .SelStart = 0
+    .SelLength = Len(.Text)
+  End With
+End Sub
+
+Private Sub PropertyPage_ApplyChanges()
+  SelectedControls(0).MenuItemsMax = MaxMenuItem
+  SelectedControls(0).MenuItemCur = txtMenuItemCur.Text
+  SelectedControls(0).MenuCaption = txtMenuCaption.Text
+  SelectedControls(0).MenuForeColor = PictForeColor.BackColor
+End Sub
+
+Private Sub PropertyPage_SelectionChanged()
+    bWait = False
+    MaxMenuItem = SelectedControls(0).MenuItemsMax
+    txtMenuItemsMax.Text = MaxMenuItem
+    CurrentMenu = SelectedControls(0).MenuItemCur
+    txtMenuItemCur.Text = CurrentMenu
+    txtMenuCaption.Text = SelectedControls(0).MenuCaption
+    PictForeColor.BackColor = SelectedControls(0).MenuForeColor
+  bWait = True
+End Sub
+
+
+
