@@ -1,0 +1,11 @@
+MenuItem = 24, 11, 619, 469, C
+MenuItems = 64, 1, 629, 488, C
+VMenu = 0, 0, 614, 479, C
+Menus = 42, 2, 614, 457, C
+ModGlobal = 34, 38, 627, 472, C
+clsArrow = 46, -10, 600, 484, C
+CtlVerticalMenu = 30, 3, 619, 479, C, 141, 93, 528, 391, C
+ppMenuItemObjects = 59, 12, 606, 482, C, 62, 55, 509, 415, C
+ppMenuObjects = 72, 38, 594, 489, C, 77, 60, 515, 414, C
+General = 53, 28, 603, 488, C, 92, 131, 531, 483, C
+ClsDialog = 44, 29, 615, 468, C
